@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2AC918F3-F535-450F-B8C7-C014DF8EA6B6}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>ExamenFinal</RootNamespace>
+    <AssemblyName>ExamenFinal</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Calculos\CalculaCostoEnvio.cs" />
+    <Compile Include="Calculos\CalculaFechaEntrega.cs" />
+    <Compile Include="Calculos\CalExtencion1.cs" />
+    <Compile Include="Calculos\CalExtencion2.cs" />
+    <Compile Include="Calculos\CalExtencion3.cs" />
+    <Compile Include="Calculos\CalExtencion4.cs" />
+    <Compile Include="Calculos\CalTiemTranslado.cs" />
+    <Compile Include="Controlador\ControladorAbstracto.cs" />
+    <Compile Include="Controlador\ControladorValidacion.cs" />
+    <Compile Include="DTO\DatosPaqueteria.cs" />
+    <Compile Include="Interfaces\ICalculaCostoEnvio.cs" />
+    <Compile Include="Interfaces\ICalculaFechaEntrega.cs" />
+    <Compile Include="Interfaces\ICalTiemTranslado.cs" />
+    <Compile Include="Interfaces\IExtenciones.cs" />
+    <Compile Include="Interfaces\IPintaMensaje.cs" />
+    <Compile Include="Interfaces\IRecuperadorDatos.cs" />
+    <Compile Include="Interfaces\IValidaFecha.cs" />
+    <Compile Include="Interfaces\IVisualizaMensaje.cs" />
+    <Compile Include="Presentacion\PintaMensaje.cs" />
+    <Compile Include="Presentacion\MensajeAmarillo.cs" />
+    <Compile Include="Presentacion\MensajeRojo.cs" />
+    <Compile Include="Presentacion\MensajeVerde.cs" />
+    <Compile Include="Presentacion\RecuperadorDatos.cs" />
+    <Compile Include="Presentacion\VisualizaMensaje.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Validaciones\ValidaDia.cs" />
+    <Compile Include="Validaciones\ValidaHora.cs" />
+    <Compile Include="Validaciones\ValidaMes.cs" />
+    <Compile Include="Validaciones\ValidaMinutos.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="Datos\Paqueteria.csv" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,12 @@
+C:\Users\carlos.can\source\repos\ExamenFinal\ExamenFinalTests\bin\Debug\ExamenFinalTests.dll
+C:\Users\carlos.can\source\repos\ExamenFinal\ExamenFinalTests\bin\Debug\ExamenFinalTests.pdb
+C:\Users\carlos.can\source\repos\ExamenFinal\ExamenFinalTests\bin\Debug\ExamenFinal.exe
+C:\Users\carlos.can\source\repos\ExamenFinal\ExamenFinalTests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\carlos.can\source\repos\ExamenFinal\ExamenFinalTests\bin\Debug\ExamenFinal.pdb
+C:\Users\carlos.can\source\repos\ExamenFinal\ExamenFinalTests\bin\Debug\ExamenFinal.exe.config
+C:\Users\carlos.can\source\repos\ExamenFinal\ExamenFinalTests\bin\Debug\es\Microsoft.VisualStudio.QualityTools.UnitTestFramework.resources.dll
+C:\Users\carlos.can\source\repos\ExamenFinal\ExamenFinalTests\obj\Debug\ExamenFinalUTests.csprojAssemblyReference.cache
+C:\Users\carlos.can\source\repos\ExamenFinal\ExamenFinalTests\obj\Debug\ExamenFinalUTests.csproj.CoreCompileInputs.cache
+C:\Users\carlos.can\source\repos\ExamenFinal\ExamenFinalTests\obj\Debug\ExamenFinalUTests.csproj.CopyComplete
+C:\Users\carlos.can\source\repos\ExamenFinal\ExamenFinalTests\obj\Debug\ExamenFinalTests.dll
+C:\Users\carlos.can\source\repos\ExamenFinal\ExamenFinalTests\obj\Debug\ExamenFinalTests.pdb

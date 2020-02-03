@@ -1,0 +1,11 @@
+﻿Origen,Destino,Distancia,Paqueteria,Transporte,FechaPedido
+Teabo,Merida,164,Fedex,Tren,26/01/2020 19:08
+Playa del Carmen,Teabo,1649,DHL,Tren,26/06/2020 17:35
+Chumayel,DF,12640,DHL,Avión,26/09/2020 13:14
+Cancun,Cozumel,280,Estafeta,Barco,26/11/2020 14:15
+Playa del Carmen,Florida,12640,DHL,Barco,1/01/2020 20:25
+Merida,Los Angeles,113642,DHL,Avión,09/07/2020 19:08
+Chican,Merida,298,Estafeta,Tren,05/01/2020 21:12
+Teabo,Tekax,84,Estafeta,Tren,17/01/2020 16:25
+Mani,Teabo,25,Fedex,Tren,21/01/2020 16:25
+Huston Tekax,Tzucacab,35678,patito,Banes Tekax,21/01/2020 16:25
