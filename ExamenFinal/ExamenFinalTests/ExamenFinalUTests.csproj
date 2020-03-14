@@ -57,10 +57,12 @@
     <Compile Include="Controlador\ControladorValidacionUTest.cs" />
     <Compile Include="Presentacion\RecuperadorDatosUTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Validaciones\ValidaBimestreUTest.cs" />
     <Compile Include="Validaciones\ValidaDiaUTest.cs" />
     <Compile Include="Validaciones\ValidaHoraUTest.cs" />
     <Compile Include="Validaciones\ValidaMesUTest.cs" />
     <Compile Include="Validaciones\ValidaMinutosUTest.cs" />
+    <Compile Include="Validaciones\ValidaSemanaUTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ExamenFinal\ExamenFinal.csproj">

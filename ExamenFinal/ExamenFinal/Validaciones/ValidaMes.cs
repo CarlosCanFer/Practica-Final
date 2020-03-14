@@ -20,25 +20,15 @@ namespace ExamenFinal.Validaciones
                 DateTime _dfechaPedido = Convert.ToDateTime(_objDatos);
                 DateTime _dfechaHoy = DateTime.Now;
                 int _mes;
-                _mes = (_dfechaHoy.Month) - (_dfechaPedido.Month);
-                if (_mes > 0)
+                _mes = Math.Abs((_dfechaHoy.Month) - (_dfechaPedido.Month));
+                if (_mes > 0 && _mes % 2 != 0 && _mes<12)
                 {
                     _cmensaje = _mes + " meses";
                     return _cmensaje;
                 }
                 else
-                { if (_mes < 0)
-                    {
-                        _cmensaje = Math.Abs(_mes) + " meses";
-                        return _cmensaje;
-                    }
-                    else
-                    {
-                        if (base._SiguienteValidacion != null)
-                        {
-                            return base._SiguienteValidacion.ValidaFecha(_objDatos);
-                        }
-                    }
+                {
+                    return base._SiguienteValidacion.ValidaFecha(_objDatos);
                 }
             } catch(Exception e)
             {

@@ -20,6 +20,7 @@ namespace ExamenFinal
       public static void Main(string[] args)
         {
             IRecuperadorDatos objrecuperaDatos = new RecuperadorDatos();
+            IRecuperadorDatosJSON objrecuperaDatos2 = new RecuperadorDatosJSON();
             IPintaMensaje objpintarMensaje = new PintaMensaje();
             CalExtencion1 objextencion1 = new CalExtencion1();
             CalExtencion2 objextencion2 = new CalExtencion2();
@@ -29,10 +30,12 @@ namespace ExamenFinal
             CalculaCostoEnvio objcostoEnvio = new CalculaCostoEnvio();
 
             List<DatosPaqueteria> objdatos;
+            List<DatosPaqueteriaJSON> objdatos2;
             string _mensaje, _cext1, _cext2, _cext3, _cext4, _crangoTiempo;
             double _dcostoenvio;
 
             objdatos = objrecuperaDatos.Recuperadatos();
+            objdatos2 = objrecuperaDatos2.Recuperadatos();
 
             foreach (DatosPaqueteria datos in objdatos)
             {

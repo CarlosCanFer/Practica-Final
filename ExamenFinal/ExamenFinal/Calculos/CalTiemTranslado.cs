@@ -40,14 +40,14 @@ namespace ExamenFinal.Calculos
         {
             switch (ctranporte)
             {
-                case "Barco":
+                case "Marítimo":
                     return 46;
                     break;
-                case "Tren":
+                case "Terrestre":
                     return 80;
                     break;
-                case "Avión":
-                    return 600;
+                case "Aéreo":
+                    return 800;
                     break;
                 default:
                     return 0;

@@ -33,6 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -53,12 +56,14 @@
     <Compile Include="Controlador\ControladorAbstracto.cs" />
     <Compile Include="Controlador\ControladorValidacion.cs" />
     <Compile Include="DTO\DatosPaqueteria.cs" />
+    <Compile Include="DTO\DatosPaqueteriaJSON.cs" />
     <Compile Include="Interfaces\ICalculaCostoEnvio.cs" />
     <Compile Include="Interfaces\ICalculaFechaEntrega.cs" />
     <Compile Include="Interfaces\ICalTiemTranslado.cs" />
     <Compile Include="Interfaces\IExtenciones.cs" />
     <Compile Include="Interfaces\IPintaMensaje.cs" />
     <Compile Include="Interfaces\IRecuperadorDatos.cs" />
+    <Compile Include="Interfaces\IRecuperadorDatosJSON.cs" />
     <Compile Include="Interfaces\IValidaFecha.cs" />
     <Compile Include="Interfaces\IVisualizaMensaje.cs" />
     <Compile Include="Presentacion\PintaMensaje.cs" />
@@ -66,18 +71,32 @@
     <Compile Include="Presentacion\MensajeRojo.cs" />
     <Compile Include="Presentacion\MensajeVerde.cs" />
     <Compile Include="Presentacion\RecuperadorDatos.cs" />
+    <Compile Include="Presentacion\RecuperadorDatosJSON.cs" />
     <Compile Include="Presentacion\VisualizaMensaje.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Validaciones\ValidaAnios.cs" />
+    <Compile Include="Validaciones\ValidaBimestre.cs" />
     <Compile Include="Validaciones\ValidaDia.cs" />
     <Compile Include="Validaciones\ValidaHora.cs" />
     <Compile Include="Validaciones\ValidaMes.cs" />
     <Compile Include="Validaciones\ValidaMinutos.cs" />
+    <Compile Include="Validaciones\ValidaSemana.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="Datos\Paqueteria.csv" />
+    <None Include="json\Config.json" />
+    <None Include="json\Pedidos.json" />
+    <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Bitacora\DHL\Entregados\" />
+    <Folder Include="Bitacora\DHL\Pendientes\" />
+    <Folder Include="Bitacora\Estafeta\Entregados\" />
+    <Folder Include="Bitacora\Estafeta\Pendientes\" />
+    <Folder Include="Bitacora\Fedex\Entregados\" />
+    <Folder Include="Bitacora\Fedex\Pendientes\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

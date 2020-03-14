@@ -60,19 +60,19 @@ namespace ExamenFinal.Presentacion
         {
             switch (encabezado)
             {
-                case "Origen":
+                case "Procedencia":
                     objdatos.cOrigen = valor;
                     break;
                 case "Destino":
                     objdatos.cDestino = valor;
                     break;
-                case "Distancia":
+                case "Dist_KM":
                     objdatos.dDistancia = Convert.ToDouble(valor);
                     break;
-                case "Paqueteria":
+                case "Empresa":
                     objdatos.cPaqueteria = valor;
                     break;
-                case "Transporte":
+                case "MedioTrans":
                     objdatos.cTransporte = valor;
                     break;
                 case "FechaPedido":
